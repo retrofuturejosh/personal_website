@@ -35,13 +35,12 @@ body {
   background: linear-gradient(to left, rgba(130, 88, 88, 0.62), rgba(255, 255, 255, 0));
   display: flex;
   height: 10vh;
-  font-size: thin;
   justify-content: flex-end;
 
   &-title {
     margin-right: 1em;
     margin-top: 1vh;
-    font-size: 6.5vh;
+    font-size: 6.5vmin;
   }
 }
 
@@ -53,21 +52,18 @@ body {
   display: flex;
   justify-content: left;
   transition: height 0.5s ease-in-out, background-color 0.5s ease;
-  font-size: 5vh;
+  font-size: 5vmin;
   text-shadow: 2px 2px 8px white;
   color: black;
   z-index: 5;
 
-    &:hover {
+    &:hover{
       transition: height 0.5s ease-in-out;
     }
   }
 
   &-green {
     background: linear-gradient(to right, rgba(212, 255, 176, 0.35), rgba(255, 255, 0, 0));
-    &:hover {
-      height: 70vh;
-    }
     &-title {
       margin-left: 15vw !important;
       margin-top: 1.7vh;
@@ -76,9 +72,6 @@ body {
 
   &-purple {
     background: linear-gradient(to right, rgba(136, 0, 255, 0.29), rgba(255, 255, 0, 0));
-    &:hover {
-      height: 70vh;
-    }
     &-title {
       margin-left: 15vw !important;
       margin-top: 1.7vh;
@@ -87,14 +80,20 @@ body {
 
   &-blue {
     background: linear-gradient(to right, rgba(0, 60, 255, 0.3), rgba(255, 255, 0, 0));
-    &:hover { 
-      height: 70vh;
-    }
     &-title {
       margin-left: 15vw !important;
       margin-top: 1.7vh;
     }
   }
+}
+
+
+#selected {
+  height: 70vh;
+}
+
+#unselected {
+  height: 10vh;
 }
 
 #background-fader {
