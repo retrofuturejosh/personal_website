@@ -1,7 +1,6 @@
 html {
-  // background-color: #1a1a1a;
-  color: #e1e1ed;
-  font-weight: 100;
+  color: black;
+  font-weight: thin;
   background: url('/NYC.png') no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -11,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat' !important;
+  font-family: 'Fira Sans' !important;
 
   a {
     text-decoration: none;
@@ -30,4 +29,80 @@ body {
     margin: 1em;
     display: inline-block;
   }
+}
+
+.navbar {
+  background: linear-gradient(to left, rgba(130, 88, 88, 0.62), rgba(255, 255, 255, 0));
+  display: flex;
+  height: 10vh;
+  font-size: thin;
+  justify-content: flex-end;
+
+  &-title {
+    margin-right: 1em;
+    margin-top: 1vh;
+    font-size: 6.5vh;
+  }
+}
+
+.colors {
+  div {
+  width: 110vw;
+  margin-left: -5vw;
+  height: 10vh;
+  display: flex;
+  justify-content: left;
+  transition: height 0.5s ease-in-out, background-color 0.5s ease;
+  font-size: 5vh;
+  text-shadow: 2px 2px 8px white;
+  color: black;
+  z-index: 5;
+
+    &:hover {
+      transition: height 0.5s ease-in-out;
+    }
+  }
+
+  &-green {
+    background: linear-gradient(to right, rgba(212, 255, 176, 0.35), rgba(255, 255, 0, 0));
+    &:hover {
+      height: 70vh;
+    }
+    &-title {
+      margin-left: 15vw !important;
+      margin-top: 1.7vh;
+    }
+  }
+
+  &-purple {
+    background: linear-gradient(to right, rgba(136, 0, 255, 0.29), rgba(255, 255, 0, 0));
+    &:hover {
+      height: 70vh;
+    }
+    &-title {
+      margin-left: 15vw !important;
+      margin-top: 1.7vh;
+    }
+  }
+
+  &-blue {
+    background: linear-gradient(to right, rgba(0, 60, 255, 0.3), rgba(255, 255, 0, 0));
+    &:hover { 
+      height: 70vh;
+    }
+    &-title {
+      margin-left: 15vw !important;
+      margin-top: 1.7vh;
+    }
+  }
+}
+
+#background-fader {
+  top: 10vh;
+  width: 80vw;
+  height: 87vh;
+  position: fixed;
+  right: 10vw;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.44), transparent);
+  z-index: -10;
 }
