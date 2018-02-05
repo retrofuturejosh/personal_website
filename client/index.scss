@@ -1,7 +1,12 @@
 html {
-  background-color: #1a1a1a;
+  // background-color: #1a1a1a;
   color: #e1e1ed;
   font-weight: 100;
+  background: url('/NYC.png') no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
 }
 
