@@ -50,6 +50,8 @@ body {
     margin-right: 11vw;
     margin-top: 1vh;
     font-size: calc(12px + 4.3vmin);
+    color:  #f8f6f3;
+    text-shadow: 1px 1px 5px black;
   }
 }
 
@@ -63,8 +65,8 @@ body {
   justify-content: left;
   transition: height 0.5s ease-in-out, background-color 0.5s ease;
   font-size: calc(12px + 4vmin);
-  text-shadow: 2px 2px 8px white;
-  color: black;
+  text-shadow: 2px 2px 8px #f5f3f0;
+  color: #443f38;
   z-index: 5;
   display: flex;
   flex-direction: column;
@@ -79,6 +81,8 @@ body {
     &-title {
       margin-left: 15vw !important;
       margin-top: 1.7vh;
+      color:#f8f6f3 !important;
+      text-shadow: 1px 1px 5px black !important;
     }
   }
 
@@ -87,16 +91,20 @@ body {
     &-title {
       margin-left: 15vw !important;
       margin-top: 1.7vh;
+      color:#f8f6f3 !important;
+      text-shadow: 1px 1px 5px black !important;
     }
   }
 
   &-blue {
-    bottom: 0;
+    top: 90vh;
     position: fixed;
     background: linear-gradient(to right, rgba(0, 60, 255, 0.3), rgba(255, 255, 0, 0));
     &-title {
       margin-left: 15vw !important;
       margin-top: 1.7vh;
+      color:#f8f6f3 !important;
+      text-shadow: 1px 1px 5px black !important;
     }
   }
 }
