@@ -16,7 +16,7 @@ export const Portfolio = () => {
         <br/>
         <a href="http://www.mattsohn.com"> MattSohn.com </a>
         <br />
-          Website for professional voice over actor, Matt Sohn, built with React. I also recorded and engineered all of the audio examples.
+          I built a simple, single page website with React for professional voice over actor, Matt Sohn, based off of his design. I also recorded and engineered all of the audio examples.
       </div>
     </div>
   )
