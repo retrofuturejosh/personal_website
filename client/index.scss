@@ -54,7 +54,7 @@ body {
     margin-right: 11vw;
     margin-top: 0.7vh;
     font-size: calc(12px + 4.3vmin);
-    color: rgba(88, 88, 88, 0.42);
+    color: rgba(88, 88, 88, 0.62);
     -webkit-animation: flyin 1.4s ease-in-out;
     font-family: 'Didact Gothic' !important;
   }
@@ -194,7 +194,7 @@ body {
   height: 100vh;
   position: fixed;
   right: 10vw;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.44), transparent);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.75), transparent);
   z-index: -10;
 }
 
