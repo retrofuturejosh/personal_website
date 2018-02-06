@@ -13,11 +13,14 @@ export class Main extends Component {
   }
 
   handleClick(e, section) {
+    if (this.state.contact === 'selectedblue') {
+      this.setState({contact: 'unselectedblue'})
+    }
     if (section === 'about' && this.state.about === 'unselected') {
-      this.setState({about: 'selected', portfolio: 'unselected', contact: 'unselected'})
+      this.setState({about: 'selected', portfolio: 'unselected'})
     }
     else if (section === 'portfolio' && this.state.portfolio === 'unselected') {
-      this.setState({about: 'unselected', portfolio: 'selected', contact: 'unselected'})
+      this.setState({about: 'unselected', portfolio: 'selected'})
     }
     else if (section === 'contact' &&  (this.state.contact === 'unselectedblue' || this.state.contact === 'unselected')) {
       this.setState({about: 'unselected', portfolio: 'unselected', contact: 'selectedblue'})
@@ -26,7 +29,7 @@ export class Main extends Component {
       this.setState({contact: 'unselectedblue'})
     }
     else {
-      this.setState({about: 'unselected', portfolio: 'unselected', contact: 'unselected'})
+      this.setState({about: 'unselected', portfolio: 'unselected'})
     }
   }
 

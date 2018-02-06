@@ -116,7 +116,8 @@ body {
 
 #selectedblue {
   height: 35vh;
-  // -webkit-animation: flyup 2s;
+  top: 65vh;
+  -webkit-animation: flyup 1s;
 }
 
 #unselected {
@@ -125,7 +126,8 @@ body {
 
 #unselectedblue {
   height: 10vh;
-  transition: height 0.5s ease-in-out, background-color 0.5s ease;
+  -webkit-animation: flydown 0.5s;
+  transition: height 2s, background-color 0.5s ease;
 }
 
 #background-fader {
@@ -198,3 +200,22 @@ body {
     opacity: 1;
   }
 }
+
+@-webkit-keyframes flyup {
+  from {
+    transform: translateY(25vh)
+  }
+  to {
+    transform: translateY(0)
+  }
+}
+
+@-webkit-keyframes flydown {
+  from {
+    transform: translateY(-25vh)
+  }
+  to {
+    transform: translateY(0)
+  }
+}
+
