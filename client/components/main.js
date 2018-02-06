@@ -68,18 +68,18 @@ export class Main extends Component {
         </div>
 
   {/* //CONTACT */} 
-        <div className="colors-blue"
-          id={this.state.contact}
-          onClick={e => this.handleClick(e, 'contact')}
-        >
-          <div className="colors-blue-title">
-            Contact
+        <div className="colors-blue">
+          <div className="footer-icons">
+            <a href="mailto:joshuadsohn@gmail.com">
+              <img className="email" src="/email.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/josh-sohn/">
+              <img src="/linkedin.png" />
+            </a>
+            <a href="https://github.com/retrofuturejosh">
+              <img src="/github.png" />
+            </a>
           </div>
-          {this.state.contact === 'selectedblue' ? 
-            <Contact />
-          :
-            null
-          }
         </div>
       </div>
       </div>
