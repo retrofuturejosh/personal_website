@@ -19,7 +19,7 @@ html {
 
 body {
   position: relative;
-  font-family: 'Fira Sans' !important;
+  font-family: 'Fira Sans';
   width: 100%;
 
   a {
@@ -52,10 +52,11 @@ body {
 
   &-title {
     margin-right: 11vw;
-    margin-top: 1vh;
+    margin-top: 0.7vh;
     font-size: calc(12px + 4.3vmin);
     color: rgba(88, 88, 88, 0.42);
     -webkit-animation: flyin 1.4s ease-in-out;
+    font-family: 'Didact Gothic' !important;
   }
 }
 
@@ -95,10 +96,11 @@ body {
     background: linear-gradient(to right, rgba(147, 177, 121, 0.65), rgba(255, 255, 255, 0));
     &-title {
       margin-left: 15vw !important;
-      margin-top: 1.7vh;
+      margin-top: 0.8vh;
       color:#f8f6f3 !important;
       text-shadow: 1px 1px 5px black !important;
       -webkit-animation: flyinfromright 2.5s ease-in-out;
+      font-family: 'Didact Gothic' !important;
     }
   }
 
@@ -106,10 +108,11 @@ body {
     background: linear-gradient(to right, rgba(67, 0, 127, 0.29), rgba(255, 255, 255, 0));
     &-title {
       margin-left: 15vw !important;
-      margin-top: 1.7vh;
+      margin-top: 0.8vh;
       color:#f8f6f3 !important;
       text-shadow: 1px 1px 5px black !important;
       -webkit-animation: flyinfromright 3s ease-in-out;
+      font-family: 'Didact Gothic' !important;
     }
   }
 
@@ -119,10 +122,11 @@ body {
     background: linear-gradient(to right, rgba(2, 35, 142, 0.35), rgba(255, 255, 255, 0));
     &-title {
       margin-left: 15vw !important;
-      margin-top: 1.7vh;
+      margin-top: 0.8vh;
       color:#f8f6f3 !important;
       text-shadow: 1px 1px 5px black !important;
       -webkit-animation: flyinfrombottom 3.5s ease-in-out;
+      font-family: 'Didact Gothic' !important;
     }
   }
 }
