@@ -6,6 +6,10 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  cursor: default;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 
 }
 
@@ -35,12 +39,15 @@ body {
   background: linear-gradient(to left, rgba(130, 88, 88, 0.62), rgba(255, 255, 255, 0));
   display: flex;
   height: 10vh;
+  min-height: 1.5em;
   justify-content: flex-end;
+  margin-right: -1em;
+  margin-top: -0.5em;
 
   &-title {
-    margin-right: 1em;
+    margin-right: 11vw;
     margin-top: 1vh;
-    font-size: 6.5vmin;
+    font-size: calc(12px + 4.3vmin);
   }
 }
 
@@ -49,13 +56,16 @@ body {
   width: 110vw;
   margin-left: -5vw;
   height: 10vh;
+  min-height: 1.5em;
   display: flex;
   justify-content: left;
   transition: height 0.5s ease-in-out, background-color 0.5s ease;
-  font-size: 5vmin;
+  font-size: calc(12px + 4vmin);
   text-shadow: 2px 2px 8px white;
   color: black;
   z-index: 5;
+  display: flex;
+  flex-direction: column;
 
     &:hover{
       transition: height 0.5s ease-in-out;
@@ -97,11 +107,50 @@ body {
 }
 
 #background-fader {
-  top: 10vh;
+  top: 0;
   width: 80vw;
-  height: 87vh;
+  height: 100vh;
   position: fixed;
   right: 10vw;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.44), transparent);
   z-index: -10;
+}
+
+.about {
+  height: 60vh !important;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 120vw !important;
+  -webkit-animation: fadein 2s;
+
+    &-content {
+    -webkit-animation: fadein 4s;
+    font-size: calc(10px + 1.2vmin) !important;
+    height: 60vh !important;
+    width: 78vw !important;
+    margin-left: 20vw !important;
+    margin-top: 2vh;
+    max-height: 50vh;
+    overflow: scroll;
+    margin-bottom: 4vh;
+  }
+}
+
+#resume {
+  margin-left: 20vw !important;
+  -webkit-animation: fadein 4s;
+  z-index: 20;
+  margin-bottom: 1vh;
+
+  a {
+    color: black;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
