@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavBar, About } from './index'
+import { NavBar, About, Portfolio } from './index'
 
 export class Main extends Component {
   constructor() {
@@ -31,38 +31,37 @@ export class Main extends Component {
     return (
       <div className="app">
       <NavBar />
-
       <div id="background-fader">
       </div>
-
       <div className="colors">
 
-        <div className="colors-green"
-          id={this.state.about}
-        >
+  {/* //ABOUT */}
+        <div className="colors-green" id={this.state.about}>
           <div className="colors-green-title"
-            onClick={e => this.handleClick(e, 'about')}
-          >
+            onClick={e => this.handleClick(e, 'about')}>
             About
           </div>
-
           {this.state.about === 'selected' ? 
-          <About />
+            <About />
           :
-          null
+            null
           }
-
         </div>
 
-        <div className="colors-purple"
-          id={this.state.portfolio}
-          onClick={e => this.handleClick(e, 'portfolio')}
-        >
-          <div className="colors-purple-title">
+  {/* //PORTFOLIO */}   
+        <div className="colors-purple" id={this.state.portfolio}>
+          <div className="colors-purple-title"
+            onClick={e => this.handleClick(e, 'portfolio')}>
               Portfolio
           </div>
+          {this.state.portfolio === 'selected' ? 
+            <Portfolio />
+          :
+            null
+          }
         </div>
 
+  {/* //CONTACT */} 
         <div className="colors-blue"
           id={this.state.contact}
           onClick={e => this.handleClick(e, 'contact')}
