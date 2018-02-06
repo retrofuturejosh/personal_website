@@ -12,10 +12,12 @@ html {
   margin: 0;
   height: 100%;
   overflow: hidden;
+  overflow-x: hidden;
 
 }
 
 body {
+  position: relative;
   font-family: 'Fira Sans' !important;
 
   a {
