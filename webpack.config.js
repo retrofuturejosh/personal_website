@@ -15,7 +15,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         query: {
-          presets: ['react']
+          presets: ['react', 'babel-preset-es2015']
       }
       },
       {
