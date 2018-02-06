@@ -31,8 +31,8 @@ html::before {
   -o-background-size: cover;
   background-size: cover;
   content: '';
-  z-index: -1;
-  -webkit-animation: fadein 2s ease-in-out;
+  z-index: -5;
+  -webkit-animation: fadein 3s ease-in-out;
 }
 
 
@@ -213,7 +213,8 @@ body {
   position: fixed;
   right: 10vw;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.75), transparent);
-  z-index: -10;
+  z-index: -5;
+  -webkit-animation: fadein 4s;
 }
 
 .about, .portfolio {
@@ -229,9 +230,9 @@ body {
     width: 78vw !important;
     margin-left: 20vw !important;
     margin-top: 2vh;
-    max-height: 50vh;
+    max-height: 65vh;
     overflow: scroll;
-    margin-bottom: 4vh;
+    margin-bottom: 1vh;
   }
 }
 
@@ -273,15 +274,14 @@ img {
   margin-left: 3vw;
 }
 
-.email {
-  margin-top: 0.8vh;
-}
 
 #resume {
   margin-left: 20vw !important;
   -webkit-animation: fadein2 2.5s;
   z-index: 20;
+  margin-top: 1vh;
   margin-bottom: 1vh;
+  font-size: calc(12px + 2vmin);
 
   a {
     color: black;
