@@ -3,7 +3,7 @@
 html {
   color: black;
   font-weight: thin;
-  background: url('/NYC.png') no-repeat center top fixed;
+  // background: url('/NYC.png') no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,6 +16,26 @@ html {
   overflow-x: hidden;
 
 }
+
+html::before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #101010;
+  background: url('/NYC.png') no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  content: '';
+  z-index: -1;
+  -webkit-animation: fadein 2s ease-in-out;
+}
+
+
 
 body {
   position: relative;
@@ -55,8 +75,8 @@ body {
     margin-right: 4vw;
     margin-top: 0.7vh;
     font-size: calc(12px + 4.3vmin);
-    color: rgb(83, 91, 119);
-    -webkit-animation: flyin 1.4s ease-in-out;
+    color: rgba(94, 86, 79, 0.57);
+    -webkit-animation: flyin 2s ease-in-out;
     font-family: 'Didact Gothic' !important;
     width: fit-content !important;
   }
@@ -64,6 +84,10 @@ body {
 
 @-webkit-keyframes flyin {
   0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  25% {
     transform: translateX(-100vw);
     opacity: 0;
   }
