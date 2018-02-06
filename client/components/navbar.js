@@ -4,7 +4,7 @@ export const NavBar = () => {
   return (
     <div className="navbar">
       <div className="navbar-title">
-        Josh Sohn
+        Josh D Sohn
       </div>
     </div>
   )
