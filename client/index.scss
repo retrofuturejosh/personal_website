@@ -35,6 +35,9 @@ html::before {
   -webkit-animation: fadein 3s ease-in-out;
 }
 
+::-webkit-scrollbar { 
+  display: none; 
+}
 
 
 body {
@@ -205,6 +208,7 @@ body {
   -webkit-animation: flydown 0.5s;
   transition: height 2s, background-color 0.5s ease;
 }
+
 
 #background-fader {
   top: 0;
