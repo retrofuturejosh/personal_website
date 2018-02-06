@@ -14,6 +14,7 @@ html {
   width: 100%;
   overflow: hidden;
   overflow-x: hidden !important;
+  position: fixed;
 
 }
 
@@ -41,7 +42,7 @@ html::before {
 
 
 body {
-  position: relative;
+  position: fixed;
   font-family: 'Fira Sans';
   width: 100%;
 
