@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavBar, About, Portfolio } from './index'
+import { NavBar, About, Portfolio, Contact } from './index'
 
 export class Main extends Component {
   constructor() {
@@ -19,8 +19,11 @@ export class Main extends Component {
     else if (section === 'portfolio' && this.state.portfolio === 'unselected') {
       this.setState({about: 'unselected', portfolio: 'selected', contact: 'unselected'})
     }
-    else if (section === 'contact' &&  this.state.contact === 'unselected') {
-      this.setState({about: 'unselected', portfolio: 'unselected', contact: 'selected'})
+    else if (section === 'contact' &&  (this.state.contact === 'unselectedblue' || this.state.contact === 'unselected')) {
+      this.setState({about: 'unselected', portfolio: 'unselected', contact: 'selectedblue'})
+    }
+    else if (section === 'contact' && this.state.contact === 'selectedblue') {
+      this.setState({contact: 'unselectedblue'})
     }
     else {
       this.setState({about: 'unselected', portfolio: 'unselected', contact: 'unselected'})
@@ -69,6 +72,11 @@ export class Main extends Component {
           <div className="colors-blue-title">
             Contact
           </div>
+          {this.state.contact === 'selectedblue' ? 
+            <Contact />
+          :
+            null
+          }
         </div>
       </div>
       </div>

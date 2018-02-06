@@ -75,7 +75,7 @@ body {
   }
 
   &-green {
-    background: linear-gradient(to right, rgba(212, 255, 176, 0.35), rgba(255, 255, 0, 0));
+    background: linear-gradient(to right, rgba(212, 255, 176, 0.65), rgba(255, 255, 0, 0));
     &-title {
       margin-left: 15vw !important;
       margin-top: 1.7vh;
@@ -91,6 +91,8 @@ body {
   }
 
   &-blue {
+    bottom: 0;
+    position: fixed;
     background: linear-gradient(to right, rgba(0, 60, 255, 0.3), rgba(255, 255, 0, 0));
     &-title {
       margin-left: 15vw !important;
@@ -104,8 +106,18 @@ body {
   height: 70vh;
 }
 
+#selectedblue {
+  height: 35vh;
+  // -webkit-animation: flyup 2s;
+}
+
 #unselected {
   height: 10vh;
+}
+
+#unselectedblue {
+  height: 10vh;
+  transition: height 0.5s ease-in-out, background-color 0.5s ease;
 }
 
 #background-fader {
@@ -118,7 +130,7 @@ body {
   z-index: -10;
 }
 
-.about {
+.about, .portfolio {
   height: 60vh !important;
   background-color: rgba(255, 255, 255, 0.7);
   width: 120vw !important;
@@ -137,6 +149,28 @@ body {
   }
 }
 
+.contact {
+  height: 60vh !important;
+  background-color: rgba(255, 255, 255, 0.55);
+  width: 120vw !important;
+  -webkit-animation: fadein 2s;
+  display: flex;
+  justify-content: space-between;
+
+  &-content {
+    -webkit-animation: fadein 4s;
+    font-size: calc(10px + 1.2vmin) !important;
+    height: 60vh !important;
+    margin-left: 20vw !important;
+    margin-top: 2vh;
+    max-height: 50vh;
+    overflow: scroll;
+    a {
+      margin-top: 1vh;
+    }
+  }
+}
+
 #resume {
   margin-left: 20vw !important;
   -webkit-animation: fadein 4s;
@@ -145,24 +179,6 @@ body {
 
   a {
     color: black;
-  }
-}
-
-.portfolio {
-  height: 60vh !important;
-  background-color: rgba(255, 255, 255, 0.78);
-  width: 120vw !important;
-  -webkit-animation: fadein 2s;
-  &-content {
-    -webkit-animation: fadein 4s;
-    font-size: calc(10px + 1.2vmin) !important;
-    height: 60vh !important;
-    width: 78vw !important;
-    margin-left: 20vw !important;
-    margin-top: 2vh;
-    max-height: 50vh;
-    overflow: scroll;
-    margin-bottom: 4vh;
   }
 }
 
