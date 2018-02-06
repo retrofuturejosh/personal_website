@@ -11,6 +11,7 @@ html {
   cursor: default;
   margin: 0;
   height: 100%;
+  width: 100%;
   overflow: hidden;
   overflow-x: hidden;
 
@@ -19,6 +20,7 @@ html {
 body {
   position: relative;
   font-family: 'Fira Sans' !important;
+  width: 100%;
 
   a {
     text-decoration: none;
