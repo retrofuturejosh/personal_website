@@ -64,10 +64,10 @@ export class Main extends Component {
             <a href="mailto:joshuadsohn@gmail.com">
               <img className="email" src="/email.png" />
             </a>
-            <a href="https://www.linkedin.com/in/josh-sohn/">
+            <a href="https://goo.gl/3Y13UA">
               <img src="/linkedin.png" />
             </a>
-            <a href="https://github.com/retrofuturejosh">
+            <a href="https://goo.gl/obyQGp">
               <img src="/github.png" />
             </a>
           </div>

@@ -202,7 +202,7 @@ body {
 #selected {
   max-height: 70vh !important;
   height: 77.8% !important;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 #selectedblue {
@@ -247,7 +247,7 @@ body {
     width: 78vw !important;
     margin-left: 20vw !important;
     margin-top: 2vh;
-    overflow: scroll;
+    overflow-y: scroll;
     margin-bottom: 1vh;
     max-height: 60vh !important;
   }
@@ -268,7 +268,7 @@ body {
     margin-left: 20vw !important;
     margin-top: 2vh;
     max-height: 50vh;
-    overflow: scroll;
+    overflow-y: scroll;
     a {
       margin-top: 1vh;
     }
