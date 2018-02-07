@@ -200,7 +200,9 @@ body {
 
 
 #selected {
-  height: 70vh !important;
+  max-height: 70vh !important;
+  height: 77.8% !important;
+  overflow: scroll;
 }
 
 #selectedblue {
