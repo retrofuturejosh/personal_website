@@ -232,22 +232,22 @@ body {
 }
 
 .about, .portfolio {
-  height: calc(60vh - 0px) !important;
+  height: 85% !important;
   background-color: rgba(255, 255, 255, 0.6);
   width: 120vw !important;
   -webkit-animation: fadein2 1.5s;
-  max-height: calc(60vh - 0px) !important;
+  max-height: 60vh !important;
 
     &-content {
     -webkit-animation: fadein2 2.5s;
     font-size: calc(10px + 1.2vmin) !important;
-    height: calc(60vh - 0px) !important;
+    height: 60vh !important;
     width: 78vw !important;
     margin-left: 20vw !important;
     margin-top: 2vh;
     overflow: scroll;
     margin-bottom: 1vh;
-    max-height: calc(60vh - 0px) !important;
+    max-height: 60vh !important;
   }
 }
 
