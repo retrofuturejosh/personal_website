@@ -255,6 +255,10 @@ body {
   }
 }
 
+.portfolio-content a {
+  font-size: calc(12px + 2vmin) !important;
+}
+
 .contact {
   height: 60vh !important;
   background-color: rgba(255, 255, 255, 0.6);
