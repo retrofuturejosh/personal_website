@@ -151,6 +151,9 @@ body {
 
   &-blue {
     top: 90vh;
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     position: fixed;
     background: linear-gradient(to left, rgba(27, 44, 99, 0.99), rgba(255, 255, 255, 0));
   }
