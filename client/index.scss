@@ -117,7 +117,6 @@ body {
   width: 110vw;
   margin-left: -5vw;
   height: 10vh;
-  min-height: 1.5em;
   display: flex;
   justify-content: left;
   transition: height 0.5s ease-in-out, background-color 0.5s ease;
@@ -160,6 +159,7 @@ body {
   &-blue {
     position: absolute;
     bottom: 0;
+    min-height: 0 !important;
     vertical-align: bottom;
     z-index: -5 !important;
     background: linear-gradient(to left, rgba(27, 44, 99, 0.99), rgba(255, 255, 255, 0));
