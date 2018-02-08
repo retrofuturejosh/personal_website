@@ -161,6 +161,7 @@ body {
     position: absolute;
     bottom: 0;
     vertical-align: bottom;
+    z-index: -5 !important;
     background: linear-gradient(to left, rgba(27, 44, 99, 0.99), rgba(255, 255, 255, 0));
   }
 }
