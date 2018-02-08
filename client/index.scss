@@ -75,10 +75,10 @@ body {
   margin-right: -1em;
   margin-top: -0.5em;
   width: 100vw;
+  align-items: center;
 
   &-title {
     margin-right: 4vw;
-    margin-top: 0.7vh;
     font-size: calc(12px + 4.3vh);
     color: rgba(94, 86, 79, 0.57);
     -webkit-animation: flyin 2s ease-in-out;
@@ -286,8 +286,8 @@ body {
 .footer-icons {
   display: flex;
   flex-direction: row !important;
-  margin-top: 2vh;
-  padding-bottom: 4vh;
+  align-items: center;
+  padding-top: 0.4vh;
   justify-content: flex-end !important;
   margin-left: 0 !important;
   width: 100vw !important;
