@@ -12,6 +12,12 @@ export class Main extends Component {
     this.handleClick = this.handleClick.bind(this)
   }
 
+  componentWillMount() {
+    if (window.location.pathname === '/audioplayer') {
+      window.location.href = "https://retrofuturejosh.github.io/demo-react-modular-audio-player/#/"
+    }
+  }
+
   handleClick(e, section) {
     if (section === 'about' && this.state.about === 'unselected') {
       this.setState({about: 'selected', portfolio: 'unselected'})
