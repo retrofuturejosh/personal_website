@@ -71,7 +71,7 @@ export class Main extends Component {
               <img className="email" src="/email.png" />
             </a>
             <a href="https://goo.gl/3Y13UA">
-              <img src="/linkedin.png" />
+              <img src="/linkin.png"/>
             </a>
             <a href="https://goo.gl/obyQGp">
               <img src="/github.png" />
