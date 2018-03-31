@@ -5,7 +5,7 @@ export const About = () => {
     <div className="about">
       <div className="about-content">
         <p>
-          Greetings! I’m a full stack software engineer currently working at
+          {` Greetings! I’m a full stack software engineer currently working at `}
           <a href="https://cedrus.digital/">Cedrus Digital</a>. I'm an endlessly
           curious problem solver, motivated by novel challenges, elegant design,
           and clean code. I attended Fullstack Academy with a full scholarship
